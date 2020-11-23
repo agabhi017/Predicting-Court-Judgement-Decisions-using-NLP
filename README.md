@@ -22,7 +22,7 @@ Court of Human Rights, regarding violations of Articles 3,5,6,8. Output will
 be a binary vector of Violation and No violation.
 
 ## Data
-            | Violations | Not Violations
+  Article#  | Violations | Not Violations
 ----------- | ---------- | --------------
 Article 3   | 591        | 560
 Article 5   | 509        | 437
