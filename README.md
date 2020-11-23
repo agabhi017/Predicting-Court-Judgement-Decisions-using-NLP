@@ -14,16 +14,7 @@ that there are 10 judges for every million population of India. With increasing
 population the cases with the courts has increased drastically while the judge to
 population ratio did not increase to the recommended level. All this together
 stanches the flow of justice.
-With state of the art Machine learning techniques in NLP our aim, is ’to accomplish human-like language processing’ (Elizabeth D. Liddy,2001.) As the applications of NLP continues it has accommodated many human-intensive work.
-Machine Translation extends the data availability to everyone by breaking the
-language barrier. As the financial markets are moving towards the algorithmic
-trading, the analysis of plain text of news becomes important. Again, NLP
-provides the tools to Extract Information from various sources which can then
-be used to make trading choices. One most human-intensive work where the
-NLP is penetrating is Question Answering. The focus remains on recognizing
-the question, extracting the meaning and then provide the appropriate answer.
-With AI shifting the problems of human-intensive functions towards machineintensive computations, its tools can be used to reduce the burden of the legal
-courts by introduction of NLP based mechanisms in the system.
+
 
 ## Objective
 Predicting the outcomes of cases which are under the jurisdiction of European
@@ -31,7 +22,7 @@ Court of Human Rights, regarding violations of Articles 3,5,6,8. Output will
 be a binary vector of Violation and No violation.
 
 ## Data
------------ | Violations | Not Violations
+            | Violations | Not Violations
 ----------- | ---------- | --------------
 Article 3   | 591        | 560
 Article 5   | 509        | 437
