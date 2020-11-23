@@ -22,12 +22,27 @@ Court of Human Rights, regarding violations of Articles 3,5,6,8. Output will
 be a binary vector of Violation and No violation.
 
 ## Data
+The number of transacripts available for each article and violation/non-violation are summarised below.
   Article#  | Violations | Not Violations
 ----------- | ---------- | --------------
 Article 3   | 591        | 560
 Article 5   | 509        | 437
 Article 6   | 754        | 565
 Article 8   | 411        | 351
+
+## Classification Models
+The following models were used for the binary classification :
+* Neural Network
+* Support Vector Machines
+* Prediction Scores\
+Using the weights calculated, we formulate a predictive score for each paragraph
+(via aggregation of the weights of constituent words). As with the word weights,
+a positive paragraph score suggests article violation while a negative score suggests no violation.
+Calculating the prediction scores for all paragraphs in a document we use three
+approaches to interpret the aggregate score to a single prediction :
+  * Min-Max : We sort the prediction scores for each paragraphs and use the sum of min and max
+  * Aggregate sum : We take a linear summation of prediction scores of all paragraphs. A positive sum predicts a violation and vice-versa
+  * Weighted sum : We take a weighted mean of the prediction paragraph score using word size as the weight of each paragraph
 
 ## Results
 The accuracies of subsections and different metrics using the most predictive features for violation and non-violation of articles and their
