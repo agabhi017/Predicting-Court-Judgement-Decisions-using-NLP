@@ -1,4 +1,4 @@
-# Predicting-Court-Judgement-Decisions-using-Natural-Language-Processing
+# Predicting Court Judgement Decisions using Natural Language Processing
 
 ## Introduction
 Legal institutions in most countries suffer from significant delay due to large
@@ -25,6 +25,23 @@ the question, extracting the meaning and then provide the appropriate answer.
 With AI shifting the problems of human-intensive functions towards machineintensive computations, its tools can be used to reduce the burden of the legal
 courts by introduction of NLP based mechanisms in the system.
 
+## Objective
+Predicting the outcomes of cases which are under the jurisdiction of European
+Court of Human Rights, regarding violations of Articles 3,5,6,8. Output will
+be a binary vector of Violation and No violation.
+
+## Data
+----------- | Violations | Not Violations
+----------- | ---------- | --------------
+Article 3   | 591        | 560
+Article 5   | 509        | 437
+Article 6   | 754        | 565
+Article 8   | 411        | 351
+
+
+
+## Full Report
+The full report is available here
 
 ## Presentation
 
