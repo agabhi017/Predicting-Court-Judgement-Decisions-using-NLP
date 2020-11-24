@@ -45,6 +45,27 @@ approaches to interpret the aggregate score to a single prediction :
   * Weighted sum : We take a weighted mean of the prediction paragraph score using word size as the weight of each paragraph
 
 ## Results
+The following table summarizes the accuracies with respect to the topmost(most frequent) features corresponding to each of the three articles(3, 6 & 8) used in [1]. 
+Moreover it can be seen that the accuracies in general are low for all the articles
+and subsections, this can be attributed to the fact that the topmost features are
+not so predictive of the violation/non-violation of the articles. Adding to this
+the data set used in [1] was very less and hence the weights obtained might be
+questionable too.
+Case Structure |Metric| Article 3 |Article 6| Article 8
+---------------|------|-----------|---------|----------
+Procedure|Max/min| 65.7| 58.32| 53.05
+||Sum Compare |66.78 |57.18| 50.13
+||Size Weighted Sum| 66.51| 55.74| 49.73
+Facts|Max/min| 60.64 |56.92| 54.88
+||Sum Compare| 60.99 |56.54| 54.19
+||Size Weighted Sum| 60.18| 56.39| 53.92
+The Law|Max/min| 54.59 |56.62| 51.85
+||Sum Compare |53.87 |57.22 |48.83
+||Size Weighted Sum| 53.96| 56.92| 48.84
+Full Doc|Max/min| 57.16| 56.86| 53.14
+||Sum Compare |54.12| 57.24| 50.26
+||Size Weighted Sum| 55.25| 57.31| 49.88
+
 The accuracies of subsections and different metrics using the most predictive features for violation and non-violation of articles and their
 corresponding weights obtained by training a model using SVM classifier and
 a linear kernel are summarised in the table below :
@@ -62,6 +83,9 @@ The Law| Max/min| 73.12| 71.47 |72.07| 70.79
 Full Doc| Max/min| 72.98| 75.89| 79.22| 70.99
 ||Sum Compare| 75.15| 73.28| 80.00 |74.14
 ||Size Weighted Sum| 72.54| 79.06 |79.57 |74.27
+
+These results indicate that the SVM classifier was able to identify more predictive features/topics as compared to manual identification.
+
 
 The table below summarizes the performance of the ”tf-idf” representation using Feed forward neural networks and SVM as classifiers.
 Classifier| Metric |Article 3 |Article 5 |Article 6 |Article 8
@@ -85,6 +109,16 @@ seems to be that the section Procedure has the most concise description of the f
 that is the section is fact dense. other explanations could be that outcome for
 a case is biased by the pre judicial treatment of the lodged complaints and the
 ruling of the domestic courts are good predictors of the outcome.
+
+## References
+1. Nikolaos Aletras, Dimitrios Tsarapatsanis, Daniel Preot¸iuc-Pietro, and
+Vasileios Lampos. Predicting judicial decisions of the european court of
+human rights: A natural language processing perspective. PeerJ Computer
+Science, 2:e93, 2016.
+2. Reed C Lawlor. What computers can do: Analysis and prediction of judicial
+decisions. American Bar Association Journal, pages 337–344, 1963.
+3. Benjamin E Lauderdale and Tom S Clark. The supreme court’s many median
+justices. American Political Science Review, 106(4):847–866, 2012.
 
 ## Full Report
 The full report is available [here](https://github.com/agabhi017/Predicting-Court-Judgement-Decisions-using-NLP/blob/master/NLP_Report.pdf)
